@@ -13,36 +13,36 @@
        * @memberOf ExpenseCtrl
        */
       $scope.expenses = [{
-          id : 0,
-          payer: 'Yuvi',
-          payee: 'Hemant',
-          category: 'Rent',
-          subCategory: 'sub',
-          amount: '1000',
-          date: '28/01/16',
-          modeOfPayment: 'cash',
-          contenteditable: true
-        }, {
-          id : 1,
-          payer: 'Kailas',
-          payee: 'Ankit',
-          category: 'Rent',
-          subCategory: 'sub',
-          amount: '2000',
-          date: '28/01/16',
-          modeOfPayment: 'cash',
+        id : 1,
+        payer: 'Yuvi',
+        payee: 'Hemant',
+        category: 'Rent',
+        subCategory: 'sub',
+        amount: '1000',
+        date: '28/01/16',
+        modeOfPayment: 'cash',
+        contenteditable: true
+      }, {
+        id : 2,
+        payer: 'Kailas',
+        payee: 'Ankit',
+        category: 'Party',
+        subCategory: 'sub',
+        amount: '2000',
+        date: '13/01/16',
+        modeOfPayment: 'cash',
         contenteditable: false
-        }, {
-          id : 2,
-          payer: 'Akshay',
-          payee: 'Amey',
-          category: 'Rent',
-          subCategory: 'sub',
-          amount: '3000',
-          date: '28/01/16',
-          modeOfPayment: 'cash',
-          contenteditable: false
-        }
+      }, {
+        id : 3,
+        payer: 'Akshay',
+        payee: 'Amey',
+        category: 'Family',
+        subCategory: 'sub',
+        amount: '3000',
+        date: '25/01/16',
+        modeOfPayment: 'cash',
+        contenteditable: false
+      }
       ];
 
       $scope.composeData = {};
@@ -52,7 +52,7 @@
         $scope.editable = true;
         $scope.composeData = transaction;
       };
-  
+
       $scope.saveComposition = function () {
         $scope.editable = false;
       }
